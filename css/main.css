@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "r-digital";
+    src: url(../fonts/DS-DIGIB.TTF);
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ffffff;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0 auto !important;
+    max-width: 90%;
+    background: #000000;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.relogio {
+    display: flex;
+    height: 15em;
+    width: 15em;
+    border: 2px solid white;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.cronometro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-play {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.tempo {
+    font-family: "r-digital";
+    font-size: 4em;
+    color: #00ff00;
+    text-shadow: -1px 2px 5px #0e9b0e;
+}
+
+.data {
+    color: #ffffff;
+    font-family: monospace;
+    margin-top: 9px;
+    font-weight: bold;
+}
+
+.buttons-play>div {
+    margin: 0px 1em;
+}
+
+.buttons-play>div>svg {
+    height: 50px;
+    width: 50px;
+}
+
+.buttons-play>div>svg>path,
+.buttons-play>div>svg {
+    fill: #ffffff
+}
+
+.reset-btn,
+.pause-btn {
+    display: none;
+}
+
+
+/* Opçoes */
+.opcoes div {
+    margin: 0 1em;
+}
+
+.opcoes {
+    position: absolute;
+    top: 0;
+    margin-top: 1em;
+    display: flex;
+}
+
+.horaOpcao, .cronometroOpcao {
+    height: 30px;
+    width: 30px;
+}
+.horaOpcao {
+    background: url(../img/clock-color.png)  0% 0% / 30px;
+}
+.cronometroOpcao {
+    background: url(../img/time.png) 0% 0% / 30px;
+}
+@media only screen and (min-device-width: 700px) {
+    .tempo {
+        font-size: 6em;
+    }
+
+    .data {
+        font-size: 1.5em;
+    }
+
+    .relogio {
+        height: 23em;
+        width: 23em;
+    }
+    .horaOpcao, .cronometroOpcao {
+        height: 40px;
+        width: 40px;
+    }
+
+    .horaOpcao {
+        background: url(../img/clock-color.png)  0% 0% / 40px;
+    }
+    .cronometroOpcao {
+        background: url(../img/time.png) 0% 0% / 40px;
+    }
+}
+
+@media only screen and (max-device-width: 700px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .buttons-play>div>svg {
+        height: 40px;
+        width: 40px;
+    }
+}

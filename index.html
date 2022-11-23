@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relogio digital</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="opcoes">
+            <div class="horaOpcao"></div>
+            <div class="cronometroOpcao"></div>
+        </div>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">
+                    <div class="relogio">
+                        <div class="tempo hora">10:</div>
+                        <div class="tempo minutos">20:</div>
+                        <div class="tempo segundos">2</div>
+                    </div>
+
+                    <div class="data"></div>
+                </div>
+                <div class="swiper-slide" style="color: #ffffff">
+                    <div class="cronometro">
+                        <div class="tempo cro-hora">00:</div>
+                        <div class="tempo cro-minuto">00:</div>
+                        <div class="tempo cro-segundos">00</div>
+                    </div>
+
+                    <div class="buttons-play">
+                        <div class="reset-btn" onclick="verificaBtns(this.className)"><svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM11 5H5V11H11V5Z" fill-rule="evenodd"></path></svg></div>
+                        <div class="play-btn" onclick="verificaBtns(this.className)"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="32px" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"><g id="Layer_1" /><g id="play_x5F_alt"><path d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M10,24V8l16.008,8L10,24z   " /></g></svg></div>
+                        <div class="pause-btn" onclick="verificaBtns(this.className)"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM224 191.1v128C224 337.7 209.7 352 192 352S160 337.7 160 320V191.1C160 174.3 174.3 160 191.1 160S224 174.3 224 191.1zM352 191.1v128C352 337.7 337.7 352 320 352S288 337.7 288 320V191.1C288 174.3 302.3 160 319.1 160S352 174.3 352 191.1z" /></svg></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <footer style="align-items: center;font-size: 1.3em;font-family: monospace;color: rgb(145 145 145);padding: 12px 0px;display: flex;position: fixed;bottom: 0;right: 0;left: 0;justify-content: center;">
+            Desenvolvido por Patrick<img src="img/purple-heart_1f49c.gif" style="width: 1.3em;filter: unset;">
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/hora.js"></script>
+    <script src="js/cronometro.js"></script>
+</body>
+
+</html>
